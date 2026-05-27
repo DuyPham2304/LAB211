@@ -115,10 +115,10 @@ public class Students extends ArrayList<Student> {
     public void displayStudent(Student s){
         System.out.println("--------------------------------------------------");
         System.out.println("Student ID: " + s.getId());
-        System.out.println("Name: " + s.getName());
-        System.out.println("Phone: " + s.getPhone());
-        System.out.println("Mountain: " + s.getMountainCode());
-        System.out.println("Fee: " + s.getTutionFee());
+        System.out.println("Name      : " + s.getName());
+        System.out.println("Phone     : " + s.getPhone());
+        System.out.println("Mountain  : " + s.getMountainCode());
+        System.out.println("Fee       : " + s.getTutionFee());
         System.out.println("--------------------------------------------------");
     }
     
