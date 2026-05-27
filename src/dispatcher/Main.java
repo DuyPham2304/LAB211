@@ -51,6 +51,12 @@ public class Main {
                 case 5: 
                     rl.searchByName(ndl.inputAndLoop("Search by name: ", Acceptable.NAME_VALID));
                     break;
+                case 6:
+                    rl.showAll(rl.filterByCampusCode(ndl.getString("Enter CampusCode to search: ")));
+                    break;
+                case 7:
+
+                    break;
                 case 9:
                     rl.saveToFile();
                     return;

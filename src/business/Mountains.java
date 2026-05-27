@@ -4,10 +4,26 @@
  */
 package business;
 
+import java.util.ArrayList;
+import model.Mountain;
+
 /**
  *
  * @author ADMIN
  */
-public class Mountains {
+public class Mountains extends ArrayList<Mountain>{
+
+    private String pathFile;
     
+    public Mountains() {
+    }
+    
+    public Mountain get(String mountainCode){
+        for(Mountain i : this){
+            if(i.getMountainCode().equalsIgnoreCase(mountainCode)){
+                return i;
+            }
+        }
+        return null;
+    }
 }

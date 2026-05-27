@@ -102,6 +102,16 @@ public class Students extends ArrayList<Student> {
         System.out.println(FOOTER_TABLE);
     }
     
+    public List<Student> filterByCampusCode(String campusCode){
+        Students rl = new Students();
+        for(Student i : this){
+            if(i.getId().substring(0, 2).equalsIgnoreCase(campusCode)){
+                rl.addStudent(i);
+            }
+        }
+        return rl;
+    }
+    
     public void displayStudent(Student s){
         System.out.println("--------------------------------------------------");
         System.out.println("Student ID: " + s.getId());
