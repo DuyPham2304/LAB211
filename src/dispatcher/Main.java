@@ -4,7 +4,10 @@
  */
 package dispatcher;
 
+import business.Mountains;
+import business.Statistics;
 import business.Students;
+import model.Mountain;
 import tools.Acceptable;
 import tools.Inputter;
 
@@ -22,7 +25,10 @@ public class Main {
         int choice = 0;
         Inputter ndl = new Inputter();
         Students rl = new Students();
+        Mountains mt = new Mountains();
+        Statistics st;
         rl.readFromFile();
+        mt.readFromFile();
         do{
             System.out.println("1. New Registration\n" +
                                "2. Update Registration Information\n" +
@@ -55,7 +61,8 @@ public class Main {
                     rl.showAll(rl.filterByCampusCode(ndl.getString("Enter CampusCode to search: ")));
                     break;
                 case 7:
-
+                    st = new Statistics(rl);
+                    st.show();
                     break;
                 case 9:
                     rl.saveToFile();

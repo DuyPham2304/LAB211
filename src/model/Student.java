@@ -116,7 +116,7 @@ public class Student implements Serializable{
 
     @Override
     public String toString() {
-        return String.format("| %-10s | %-20s | %-10s | %-25s | %-15s | %-15f |%n", id, name, phone, email, mountainCode, tutionFee);
+        return String.format("| %-10s | %-20s | %-10s | %-25s | %-15s | %-,15.0f |\n", id, name, phone, email, mountainCode, tutionFee);
     }
 
     

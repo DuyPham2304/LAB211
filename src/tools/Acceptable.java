@@ -16,6 +16,7 @@ public interface Acceptable {
     public final String VIETTEL_VALID = "^(032|033|034|035|036|037|038|039|096|097|098|086)\\d{7}$";
     public final String VNPT_VALID = "";
     public final String EMAIL_VALID = "^[A-Za-z0-9]+@[A-Za-z0-9]+\\.[A-Za-z0-9]{2,}$";
+    public final String MOUNT_CODE = "^[Mm][Tt]\\d{2}$";
     
     public static boolean isValid(String data, String pattern){
         return data.matches(pattern);

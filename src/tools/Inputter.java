@@ -58,7 +58,7 @@ public class Inputter {
             String name = inputAndLoop("Enter name: ", Acceptable.NAME_VALID);
             String phone = inputAndLoop("Enter phone number: ", Acceptable.VIETTEL_VALID);
             String email = inputAndLoop("Enter email: ", Acceptable.EMAIL_VALID);
-            String mountainCode = inputAndLoop("Enter mountain code: ", Acceptable.INTEGER_VALID);
+            String mountainCode = inputAndLoop("Enter mountain code: ", Acceptable.MOUNT_CODE);
             double tuitionFee = Double.parseDouble(inputAndLoop("Enter tuition fee: ", Acceptable.DOUBLE_VALID));
             return new Student(id, name, phone, email, mountainCode, tuitionFee);
         } 
@@ -67,7 +67,7 @@ public class Inputter {
             String name = inputAndLoop("Enter new name: ", Acceptable.NAME_VALID);
             String phone = inputAndLoop("Enter new phone number: ", Acceptable.VIETTEL_VALID);
             String email = inputAndLoop("Enter new email: ", Acceptable.EMAIL_VALID);
-            String mountainCode = inputAndLoop("Enter new mountain code: ", Acceptable.INTEGER_VALID);
+            String mountainCode = inputAndLoop("Enter new mountain code: ", Acceptable.MOUNT_CODE);
             double tuitionFee = Double.parseDouble(inputAndLoop("Enter new tuition fee: ", Acceptable.DOUBLE_VALID));
             return new Student(null, name, phone, email, mountainCode, tuitionFee);
         }
